@@ -90,6 +90,101 @@ public:
             size++;
         }
     }
+
+    int GetAtIndex(int idx)
+    {
+        if (idx == 0)
+        {
+            return head->val;
+        }
+        else if (idx == size - 1)
+        {
+            return tail->val;
+        }
+        if (idx < 0 || idx > size)
+        {
+            cout << "Invalid index" << endl;
+            return -1;
+        }
+        else
+        {
+            Node *temp = head;
+            for (int i = 0; i < idx; i++)
+            {
+                temp = temp->next;
+            }
+            return temp->val;
+        }
+    }
+
+    void DeleteAtHead()
+    {
+        if (size == 0)
+        {
+            cout << "List is empty" << endl;
+        }
+        else if (size == 1)
+        {
+            head = tail = NULL;
+            size--;
+        }
+        else
+        {
+            head = head->next;
+            size--;
+        }
+    }
+
+    void deleteAtTail()
+    {
+        if (size == 0)
+        {
+            cout << "List is empty" << endl;
+        }
+        else if (size == 1)
+        {
+            head = tail = NULL;
+            size--;
+        }
+        else
+        {
+            Node *temp = head;
+            while (temp->next->next != NULL)
+            {
+                temp = temp->next;
+            }
+            temp->next = NULL;
+            tail = temp;
+            size--;
+        }
+    }
+
+    void deleteAtIndex(int idx)
+    {
+        if (idx == 0)
+        {
+            DeleteAtHead();
+        }
+        else if (idx == size - 1)
+        {
+            deleteAtTail();
+        }
+        else if (idx < 0 || idx >= size)
+        {
+            cout << "Invalid Index" << endl;
+        }
+        else
+        {
+            Node *temp = head;
+            for (int i = 0; i < idx - 1; i++)
+            {
+                temp = temp->next;
+            }
+            Node *t = temp->next->next;
+            temp->next = t;
+            size--;
+        }
+    }
 };
 
 int main()
@@ -117,6 +212,17 @@ int main()
     ll.Display();
 
     ll.InsertAtIndex(2, 100);
+    ll.Display();
+
+    cout << ll.GetAtIndex(2) << endl;
+
+    ll.DeleteAtHead();
+    ll.Display();
+
+    ll.deleteAtTail();
+    ll.Display();
+
+    ll.deleteAtIndex(2);
     ll.Display();
 
     return 0;
