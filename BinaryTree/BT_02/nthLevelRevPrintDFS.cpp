@@ -36,13 +36,13 @@ void nthLevel(TreeNode *root, int curr, int dest)
         cout << root->val << " "; // KAAM
         return;
     }
-    nthLevel(root->left, curr + 1, dest);  // CALL 1
     nthLevel(root->right, curr + 1, dest); // CALL 2
+    nthLevel(root->left, curr + 1, dest);  // CALL 1
 }
 void levelOrder(TreeNode *root)
 {
     int n = level(root);
-    for (int i = 1; i <= n; i++)
+    for (int i = n; i >= 1; i--)
     {
         nthLevel(root, 1, i);
     }
@@ -65,10 +65,10 @@ int main()
     c->left = f;
     c->right = g;
 
-    // cout << "Element and Desired Level is : ";
-    // nthLevel(a, 1, 2);
-    // cout << endl;
-    cout << "Level Order is : ";
+    cout << "Element and Desired Level is : ";
+    nthLevel(a, 1, 3);
+    cout << endl;
+    cout << "Level Order in Rev. Order is : ";
     levelOrder(a);
 
     return 0;
