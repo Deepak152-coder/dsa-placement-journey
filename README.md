@@ -1,45 +1,26 @@
-# 🚀 DSA Placement Journey
+# DSA Practice 🚀
 
-Welcome to my **DSA Placement Journey** repository!
+This repository contains my **Data Structures and Algorithms (DSA)** practice in C++.
 
-This repository contains my solutions to Data Structures & Algorithms problems solved during my placement preparation. My goal is to strengthen problem-solving skills through consistent practice and build a strong foundation for coding interviews.
-
-## 🎯 Goals
-
-- Solve DSA problems consistently.
-- Improve problem-solving and analytical thinking.
-- Master core data structures and algorithms.
-- Prepare for Software Engineering interviews.
-
-## 💻 Language
-
-- C++
+I am solving and organizing problems topic-wise while building a strong foundation for coding interviews and competitive programming.
 
 ## 📂 Repository Structure
 
-```
-DSA Placement Journey/
+```text
+DSA/
 │
-├── Linked List/
-├── Arrays/
-├── Strings/
+├── Binary_Search/
+│
+├── Binary_Search_Tree/
+│
+├── BinaryTree/
+│
+├── Linked_List/
+│
 ├── Stack/
-├── Queue/
-├── Trees/
-├── Graphs/
-├── Dynamic Programming/
-└── ...
+│   ├── Q_practise/
+│   ├── stack_01/
+│   └── stack_02/
+│
+└── README.md
 ```
-
-## 📌 Platforms
-
-- LeetCode
-- GeeksforGeeks
-- Coding Ninjas
-- HackerRank
-
-## 📈 Progress
-
-This repository will be updated regularly as I continue solving new problems.
-
-⭐ Consistency over perfection.
