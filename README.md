@@ -2,12 +2,13 @@
 
 This repository contains my **Data Structures and Algorithms (DSA)** practice in C++.
 
-I am solving and organizing problems topic-wise while building a strong foundation for coding interviews and competitive programming.
+I am solving and organizing problems topic-wise while building a strong foundation for **coding interviews, placements, and competitive programming**.
 
 ## 📂 Repository Structure
 
 ```text
-DSA/
+DSA For Placement/
+
 │
 ├── Binary_Search/
 │
@@ -15,12 +16,27 @@ DSA/
 │
 ├── BinaryTree/
 │
+├── Dynamic Programming/
+│
 ├── Linked_List/
 │
+├── Math/
+│
 ├── Stack/
-│   ├── Q_practise/
-│   ├── stack_01/
-│   └── stack_02/
+│
+├── String/
 │
 └── README.md
 ```
+
+## 🎯 Goal
+
+- Strengthen DSA fundamentals
+- Practice problems topic-wise
+- Improve problem-solving skills
+- Prepare for coding interviews and placements
+- Maintain a structured record of my DSA journey
+
+## 🛠️ Language
+
+- **C++**
